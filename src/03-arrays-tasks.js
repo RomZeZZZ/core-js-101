@@ -461,7 +461,6 @@ function getIdentityMatrix(/* n */) {
 function getIntervalArray(/* start, end */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns array containing only unique values from the specified array.
  *
@@ -473,8 +472,8 @@ function getIntervalArray(/* start, end */) {
  *   [ 'a', 'a', 'a', 'a' ]  => [ 'a' ]
  *   [ 1, 1, 2, 2, 3, 3, 4, 4] => [ 1, 2, 3, 4]
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
+function distinct(arr) {
+  return [...new Set(arr)];
 }
 
 /**
